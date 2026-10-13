@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <title>Linktree — Nico Werle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</head>
+<body>
+    <div id="boot-screen" class="boot-screen">
+        <div class="monitor-frame">
+            <div class="monitor-screen">
+                <div class="terminal-content">
+                    <span class="boot-text">System initialisiere...</span>
+                    <span class="boot-text">Lade Social-Links &amp; Profile...</span>
+                    <div class="loader-bar-container">
+                        <div class="loader-bar"></div>
+                    </div>
+                    <span class="boot-status">100% - Bereit. Starte Linktree...</span>
+                </div>
+            </div>
+            <div class="monitor-stand"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <button class="theme-toggle" id="themeToggle" title="Dunkel/Hell-Modus" aria-label="Design-Modus wechseln">🌙</button>
+            </div>
+            <img src="/images/Profilbild.png" alt="Profilbild von Nico Werle" class="profile-avatar">
+            <h1>Linktree</h1>
+            <nav class="page-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="linktree-list">
+                <div class="social-item">
+                    <a class="social-btn" href="https://www.facebook.com/profile.php?id=100090499627426" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook"></i>
+                        <span class="social-text">Facebook</span>
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a class="social-btn" href="https://x.com/Xgamerthefirst" target="_blank" rel="noopener">
+                        <i class="fab fa-twitter"></i>
+                        <span class="social-text">X</span>
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a class="social-btn" href="https://www.instagram.com/nico_vhm/" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                        <span class="social-text">Instagram</span>
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a class="social-btn" href="https://discord.com/users/993164241299308674" target="_blank" rel="noopener">
+                        <i class="fab fa-discord"></i>
+                        <span class="social-text">Discord</span>
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a class="social-btn" href="https://www.twitch.tv/xgamerthefirst" target="_blank" rel="noopener">
+                        <i class="fab fa-twitch"></i>
+                        <span class="social-text">Twitch</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; <span class="current-year"></span> Nico Werle. Alle Rechte vorbehalten.</p>
+            <p class="footer-email-label">Sende mir eine Email</p>
+            <p><a class="footer-email-link" href="mailto:nico@werle.vip">nico@werle.vip</a></p>
+            <p class="footer-subtitle">Crafted with 💜 &amp; Code</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

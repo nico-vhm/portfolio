@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <title>About — Nico Werle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</head>
+<body>
+    <div id="boot-screen" class="boot-screen">
+        <div class="monitor-frame">
+            <div class="monitor-screen">
+                <div class="terminal-content">
+                    <span class="boot-text">System initialisiere...</span>
+                    <span class="boot-text">Lade Module (CSS, JS, Assets)...</span>
+                    <div class="loader-bar-container">
+                        <div class="loader-bar"></div>
+                    </div>
+                    <span class="boot-status">100% - Bereit. Starte UI...</span>
+                </div>
+            </div>
+            <div class="monitor-stand"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <button class="theme-toggle" id="themeToggle" title="Dunkel/Hell-Modus" aria-label="Design-Modus wechseln">🌙</button>
+            </div>
+            <img src="/images/Profilbild.png" alt="Profilbild von Nico Werle" class="profile-avatar">
+            <h1>Nico Werle</h1>
+            <div id="headerSocialLinks" class="header-social-links"></div>
+            <nav class="page-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="linktree.html" class="nav-link">Linktree</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2 class="section-title">Über Mich</h2>
+            <div id="aboutSection" class="about-section">
+                <div class="about-columns">
+                    <div class="about-column">
+                        <h3>Über mich</h3>
+                        <p id="aboutText1">Mein Name ist Nico Werle, und ich bin <span id="age"></span> Jahre alt. Ich interessiere mich für Videospiele und die Technik dahinter und eigne mir gern neue Fähigkeiten an, am liebsten durch praktische Umsetzung.</p>
+                    </div>
+                    <div class="about-column">
+                        <h3>Meine Vorlieben</h3>
+                        <p id="aboutText2">Das Programmieren ermöglicht es mir, eigene Ideen technisch umzusetzen. Benötige ich ein Werkzeug, das es nicht gibt, entwickle ich es selbst. Auf diese Weise sind meine Web-Apps und das Projekt Hoshibi entstanden.</p>
+                    </div>
+                    <div class="about-column">
+                        <h3>Meine Lieblingsbeschäftigung</h3>
+                        <p id="aboutText3">Ich suche gezielt nach Herausforderungen und möchte mein Wissen stetig vertiefen, sei es durch die Analyse von Spielen, durch technische Projekte oder durch das Erlernen neuer Sprachen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Projekte</h2>
+            <ul id="sections" class="goals-grid"></ul>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; <span class="current-year"></span> Nico Werle. Alle Rechte vorbehalten.</p>
+            <p class="footer-email-label">Sende mir eine Email</p>
+            <p><a class="footer-email-link" href="mailto:nico@werle.vip">nico@werle.vip</a></p>
+            <p class="footer-subtitle">Crafted with 💜 &amp; Code</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
